@@ -5,7 +5,7 @@
 ## Estado actual
 - FASE 1 — Arnés Cognitivo Multi-Marca → SUPERADA (2026-11-17)
 - FASE 2 — Motor Remotion en `engine/` → SUPERADA (render verificado)
-- Siguiente fase: FASE 3 (pendiente de definir por el usuario)
+- KUTT: sistema base + Video A Insignia (`engine/src/components/kutt/`) → OK
 - Nombre canónico del repo: `mi-mundo-engine`. Push a `claude/quirky-carson-xe955h` aprobado.
 
 ## Decisiones vigentes confirmadas
@@ -24,6 +24,7 @@
   - `2026-11-17-fase1-init.md` — inicialización Fase 1
   - `2026-11-17-renombrado-repo.md` — nombre canónico `mi-mundo-engine`
   - `2026-11-17-fase2-remotion.md` — instalación del motor Remotion
+  - `2026-11-17-kutt-sistema-video-a.md` — sistema KUTT y Video A
 - Verificador de fase: `scripts/verify-phase1.sh`
 - Motor: `engine/` (Root: `engine/src/Root.tsx`, 30 fps, 1080x1920)
 - Permisos/denegaciones: `.claude/settings.json`
@@ -34,12 +35,12 @@
 |---------------------|---------------------------------------------|
 | mente-estrategica   | ACTIVA (falta tipografía, ruta logo)        |
 | metal-lopez         | ACTIVA (falta voz, tipografía, logo)        |
-| kutt                | ACTIVA (falta voz ElevenLabs, ruta SVG)     |
+| kutt                | ACTIVA (falta voz, SVG, color de texto)     |
 | vitaly              | ACTIVA (falta tipografía, logo, voz)        |
 | nicolas-lopez       | ACTIVA (falta tipografía, logo, voz)        |
 
 ## Preguntas abiertas
 - Renombrado remoto `Mente.estrategica` → `mi-mundo-engine`: aprobado, pendiente de
   ejecutar en GitHub Settings (ver `2026-11-17-renombrado-repo.md`).
-- Completar campos `NO DEFINIDO` en `vault/04-MARCAS/`.
+- Completar campos `NO DEFINIDO` en `vault/04-MARCAS/` (KUTT: texto `#FFFFFF` provisional).
 - ¿Overrides de FPS/formato por marca (p. ej. 60 fps para algún canal)?

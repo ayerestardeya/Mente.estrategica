@@ -15,7 +15,10 @@ actualizado: 2026-11-17
 - Fondo: Deep Slate `#0A1218`
 - Acento principal: Glaciar Cyan `#00C4B4`
 - Texto / Primario: NO DEFINIDO
-- Tipografía: **Archivo**
+- Tipografía títulos: **Archivo ExtraBold (800)**
+- Tipografía cuerpo / subtítulos: **Inter** (confirmado por el usuario 2026-11-17)
+- Handle: `@kutt.cl` · Frase de cierre: "KUTT, todo en orden."
+- Tokens en código: `engine/src/components/kutt/theme.ts`
 - Logo: SVG vectorial oficial (ruta del archivo: NO DEFINIDO)
 
 ## Audio
@@ -29,5 +32,5 @@ actualizado: 2026-11-17
 - FPS: 30 (default del motor) · Formato: 1080x1920 vertical
 
 ## Aislamiento
-- Rutas propias: `vault/01-GUIONES/kutt/`, `vault/03-METRICAS/kutt/`, `engine/src/brands/kutt/`
+- Rutas propias: `vault/01-GUIONES/kutt/`, `vault/03-METRICAS/kutt/`, `engine/src/components/kutt/`, `engine/public/kutt/`
 - Esta marca no comparte assets, guiones ni copys con ninguna otra.
