@@ -8,15 +8,15 @@ import type { BrandSlug, SkillId } from "../constants";
 export interface CinematicProfile {
   /** Opacidad del film grain (soft-light). */
   grano: number;
-  /** Alfa de la luz ambiente del acento: [centro 0%, medio 35%]. */
-  luzAmbiente: readonly [number, number];
+  /** Alfa de la luz ambiente del acento: [centro 0%, medio 35%]. Ausente = sin luz ambiente. */
+  luzAmbiente?: readonly [number, number];
   /** Alfa de la viñeta negra: [interior 20%, exterior 100%]. */
   vineta: readonly [number, number];
-  dashboard: { rotacion: readonly [number, number, number]; perspectiva: number };
-  dashboardCinematico: { rotacion: readonly [number, number, number]; perspectiva: number; translateZ: number };
-  tarjeta: { gradiente: readonly [string, string]; bordeAlfa: number };
+  dashboard?: { rotacion: readonly [number, number, number]; perspectiva: number };
+  dashboardCinematico?: { rotacion: readonly [number, number, number]; perspectiva: number; translateZ: number };
+  tarjeta?: { gradiente: readonly [string, string]; bordeAlfa: number };
   /** Resorte de la tipografía cinética de la marca. */
-  springTexto: Partial<SpringConfig>;
+  springTexto?: Partial<SpringConfig>;
 }
 
 export interface BrandTheme {
@@ -141,7 +141,11 @@ export const THEMES = {
     skillsPreferidas: ["Hyperframes"],
     fontFile: "brands/nicolas-lopez/fonts/poppins-700-latin.woff2",
     typeface3d: "brands/nicolas-lopez/fonts/poppins-700.typeface.json",
-    cinematic: null,
+    cinematic: {
+      // Blueprint §1.3: grano 0.07 · viñeta 0.65. Luz ambiente "selectiva" (sin valor) → apagada.
+      grano: 0.07,
+      vineta: [0.15, 0.65],
+    },
   },
 } as const satisfies Record<BrandSlug, BrandTheme>;
 

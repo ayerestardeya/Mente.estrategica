@@ -24,9 +24,12 @@ export const CinematicBackground: React.FC<{ theme: BrandTheme; children: React.
             zIndex: Z.luz,
             pointerEvents: "none",
             background: [
-              `radial-gradient(ellipse at 50% 42%, ${rgba(theme.acento, p.luzAmbiente[0])} 0%, ${rgba(theme.acento, p.luzAmbiente[1])} 35%, transparent 65%)`,
+              p.luzAmbiente &&
+                `radial-gradient(ellipse at 50% 42%, ${rgba(theme.acento, p.luzAmbiente[0])} 0%, ${rgba(theme.acento, p.luzAmbiente[1])} 35%, transparent 65%)`,
               `radial-gradient(ellipse at 50% 100%, rgba(0,0,0,${p.vineta[0]}) 20%, rgba(0,0,0,${p.vineta[1]}) 100%)`,
-            ].join(", "),
+            ]
+              .filter(Boolean)
+              .join(", "),
           }}
         />
       )}

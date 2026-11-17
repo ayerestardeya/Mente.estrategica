@@ -27,15 +27,15 @@ export const IsometricDashboard: React.FC<Props> = ({ theme, visual, contenido, 
 
   // Geometría: preset principal o cinematográfico según shot_type.
   const geo =
-    visual.shot_type === "cinematic" && cine
+    visual.shot_type === "cinematic" && cine?.dashboardCinematico
       ? { ...cine.dashboardCinematico }
-      : { rotacion: cine?.dashboard.rotacion ?? ([55, 0, -35] as const), perspectiva: cine?.dashboard.perspectiva ?? 1400, translateZ: 0 };
+      : { rotacion: cine?.dashboard?.rotacion ?? ([55, 0, -35] as const), perspectiva: cine?.dashboard?.perspectiva ?? 1400, translateZ: 0 };
   const [rx, ry, rz] = geo.rotacion;
 
-  const gradiente = cine
+  const gradiente = cine?.tarjeta
     ? `linear-gradient(145deg, ${cine.tarjeta.gradiente[0]}, ${cine.tarjeta.gradiente[1]})`
     : theme.fondo;
-  const bordeBase = cine?.tarjeta.bordeAlfa ?? 0.16;
+  const bordeBase = cine?.tarjeta?.bordeAlfa ?? 0.16;
 
   // Entrada del plano (resorte pesado).
   const entrada = spring({ frame: frame - 2, fps, config: SPRINGS.heavy });

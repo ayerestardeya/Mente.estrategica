@@ -4,7 +4,7 @@ nombre: Nicolás López
 estado: ACTIVA
 fps: 30
 formato_default: 1080x1920
-actualizado: 2026-11-17 (v3)
+actualizado: 2026-11-17 (v4)
 ---
 # Identidad de marca — Nicolás López
 
@@ -20,6 +20,12 @@ actualizado: 2026-11-17 (v3)
 - Tipografía: **Poppins Bold (700)** → `engine/public/brands/nicolas-lopez/fonts/`
   (`poppins-700-latin.woff2` para HTML · `poppins-700.typeface.json` para texto 3D) (OFL)
 - Logo: `vault/04-MARCAS/assets/nicolas-lopez-logo.png` (placeholder vacío)
+
+## Dirección de arte (blueprint §1.3, aprobado 2026-11-17)
+- Film grain: PNG 512×512 · opacidad **0.07** · `soft-light`.
+- Viñeta: radial desde abajo, negro α 0.15 (20%) → **0.65** (100%).
+- Luz ambiente: "selectiva" (sin valor definido → apagada por defecto).
+- Aberración cromática / glitch: selectivos, solo en pattern interrupts.
 
 ## Audio
 - Voz: ElevenLabs — voz clonada

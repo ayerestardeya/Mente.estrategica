@@ -9,8 +9,9 @@ export const ConversionCard: React.FC<{ theme: BrandTheme; cta: CtaData; inicio:
   const p = useCtaSpring(inicio);
   const boton = useCtaSpring(inicio + 8);
   const color = theme.cta ?? theme.acento;
-  const fondo = theme.cinematic
-    ? `linear-gradient(145deg, ${theme.cinematic.tarjeta.gradiente[0]}, ${theme.cinematic.tarjeta.gradiente[1]})`
+  const tarjeta = theme.cinematic?.tarjeta;
+  const fondo = tarjeta
+    ? `linear-gradient(145deg, ${tarjeta.gradiente[0]}, ${tarjeta.gradiente[1]})`
     : theme.fondo;
 
   return (

@@ -22,3 +22,8 @@ node_modules/
 
 # SO
 .DS_Store
+
+# Windows (PC local de render)
+Thumbs.db
+desktop.ini
+*.log

@@ -57,10 +57,19 @@ Cualquier slug fuera de esta tabla es inválido: detente y pregunta.
   usuario que configure el secreto fuera del repo.
 - No conectes MCP ni n8n hasta que exista una decisión en `vault/02-DECISIONES/`.
 
+## Modo híbrido (nube ↔ PC local)
+- La nube programa y versiona (código, JSON, vault). El PC local (Windows + GPU)
+  solo clona, hace `git pull` y renderiza. Guía: `vault/02-DECISIONES/2026-11-17-estrategia-hibrida.md`.
+- Config de máquina y secretos SOLO en `engine/.env` (ignorado por git), creado
+  desde `engine/env.local.example`. Prohibido leerlo, imprimirlo o commitearlo.
+- Nube: `REMOTION_GL=swangle`. Local: `REMOTION_GL=angle` (GPU). Nunca al revés.
+- Estas reglas y `.claude/settings.json` viajan con el repo: aplican igual a
+  cualquier sesión de Claude Code abierta en el PC local.
+
 ## Git
 - Commits locales permitidos. **Nunca `git push` ni crear remotos sin
   aprobación explícita del usuario en el chat.**
-- Audio/video binario (`*.mp3`, `*.wav`, `*.mp4`) nunca se versiona.
+- Audio/video binario (`*.mp3`, `*.wav`, `*.mp4`) y `engine/out/` nunca se versionan.
 
 ## Flujo del vault (segundo cerebro)
 `00-INBOX` (captura cruda) → `01-GUIONES/<slug>` (guion aprobado) → render →
