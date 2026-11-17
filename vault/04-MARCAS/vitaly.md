@@ -28,5 +28,5 @@ actualizado: 2026-11-17 (v2)
 - FPS: 30 (default del motor) · Formato: 1080x1920 vertical
 
 ## Aislamiento
-- Rutas propias: `vault/01-GUIONES/vitaly/`, `vault/03-METRICAS/vitaly/`, `engine/src/brands/vitaly/`
+- Rutas propias: `vault/01-GUIONES/vitaly/`, `vault/03-METRICAS/vitaly/`, `engine/public/brands/vitaly/`
 - Esta marca no comparte assets, guiones ni copys con ninguna otra.

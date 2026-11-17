@@ -12,22 +12,28 @@
     "typecheck": "tsc --noEmit",
     "render:test-kutt": "remotion render src/Root.tsx BrandRouter out/kutt-test.mp4 --props='{\"marca\": \"kutt\", \"skillTarget\": \"OpusCard\"}'",
     "render:kutt-viral": "remotion render src/Root.tsx MotorJSON out/kutt/kutt-viral.mp4 --props=public/test-kutt-viral.json",
-    "still:kutt-viral": "remotion still src/Root.tsx MotorJSON out/kutt/kutt-viral.png --props=public/test-kutt-viral.json"
+    "still:kutt-viral": "remotion still src/Root.tsx MotorJSON out/kutt/kutt-viral.png --props=public/test-kutt-viral.json",
+    "render:test-3d": "remotion render src/Root.tsx BrandRouter out/nicolas-lopez/barrera-3d.mp4 --frames=0-59 --props='{\"marca\": \"nicolas-lopez\", \"skillTarget\": \"Hyperframes\", \"titulo\": \"Nicolás López\"}'"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
     "@remotion/cli": "4.0.544",
     "@remotion/player": "4.0.544",
     "@remotion/tailwind-v4": "4.0.544",
+    "@remotion/three": "4.0.544",
     "@remotion/zod-types": "4.0.544",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "remotion": "4.0.544",
+    "three": "^0.187.0",
     "zod": "^4.0.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.187.0",
     "@vitejs/plugin-react": "^6.0.0",
     "tailwindcss": "^4.0.0",
     "typescript": "^5.9.0",

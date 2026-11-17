@@ -23,7 +23,7 @@ actualizado: 2026-11-17 (v2)
 
 ## Dirección de arte (blueprint 2026-11-17)
 - Iluminación: radial Cyan centrado (50% 42%) α 0.12 → 0.055 (35%) → transparente (65%).
-- Viñeta: radial desde abajo, negro α 0.15 (20%) → 0.75 (100%).
+- Viñeta: radial desde abajo, negro α 0.15 (20%) → **0.45** (100%) (ajustada por legibilidad de KPIs, 2026-11-17).
 - Film grain: PNG 512×512 monocromo tileable · opacidad 0.055 · `soft-light`.
 - Tarjetas: gradiente 145° `#142832` → `#0C171E` · borde Cyan α 0.16 ·
   sombras `0 25px 45px rgba(0,0,0,.42)`, `0 10px 18px rgba(0,0,0,.25)`, glow Cyan α 0.07.
@@ -43,5 +43,5 @@ actualizado: 2026-11-17 (v2)
 - FPS: 30 (default del motor) · Formato: 1080x1920 vertical
 
 ## Aislamiento
-- Rutas propias: `vault/01-GUIONES/kutt/`, `vault/03-METRICAS/kutt/`, `engine/src/brands/kutt/`
+- Rutas propias: `vault/01-GUIONES/kutt/`, `vault/03-METRICAS/kutt/`, `engine/public/brands/kutt/`
 - Esta marca no comparte assets, guiones ni copys con ninguna otra.

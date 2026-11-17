@@ -30,6 +30,8 @@ export interface BrandTheme {
   acentoSecundario: string | null;
   /** Color reservado a CTAs/advertencias, si la ficha lo define. */
   cta: string | null;
+  /** Colores de glitch/aberración (solo eventos). null = la marca no usa glitch. */
+  glitch: { rojo: string; cyan: string } | null;
   /** Tipografía declarada en el vault. null = NO DEFINIDO. */
   fuente: string | null;
   fontWeight: number;
@@ -54,6 +56,7 @@ export const THEMES = {
     acento: "#FFB020",
     acentoSecundario: null,
     cta: null,
+    glitch: null,
     fuente: null,
     fontWeight: 700,
     logo: null,
@@ -69,6 +72,7 @@ export const THEMES = {
     acento: "#00C4B4",
     acentoSecundario: null,
     cta: null,
+    glitch: null,
     fuente: "Archivo",
     fontWeight: 800,
     logo: "vault/04-MARCAS/assets/kutt-logo.svg",
@@ -77,7 +81,7 @@ export const THEMES = {
     cinematic: {
       grano: 0.055,
       luzAmbiente: [0.12, 0.055],
-      vineta: [0.15, 0.75],
+      vineta: [0.15, 0.45],
       dashboard: { rotacion: [55, 0, -35], perspectiva: 1400 },
       dashboardCinematico: { rotacion: [48, -8, -25], perspectiva: 1100, translateZ: 100 },
       tarjeta: { gradiente: ["#142832", "#0C171E"], bordeAlfa: 0.16 },
@@ -92,6 +96,7 @@ export const THEMES = {
     acento: "#2F9E9B",
     acentoSecundario: "#2F9E9B",
     cta: "#F0724F",
+    glitch: null,
     fuente: "Inter",
     fontWeight: 700,
     logo: "vault/04-MARCAS/assets/metal-lopez-logo.svg",
@@ -107,6 +112,7 @@ export const THEMES = {
     acento: "#7C6BF2",
     acentoSecundario: null,
     cta: null,
+    glitch: null,
     fuente: "Montserrat",
     fontWeight: 700,
     logo: "vault/04-MARCAS/assets/vitaly-logo.svg",
@@ -117,11 +123,12 @@ export const THEMES = {
   "nicolas-lopez": {
     slug: "nicolas-lopez",
     nombre: "Nicolás López",
-    fondo: "#010409",
+    fondo: "#050505",
     texto: null,
     acento: "#00C4B4",
     acentoSecundario: "#FFB020",
     cta: null,
+    glitch: { rojo: "#FF003C", cyan: "#00DCFF" },
     fuente: "Poppins",
     fontWeight: 700,
     logo: "vault/04-MARCAS/assets/nicolas-lopez-logo.png",

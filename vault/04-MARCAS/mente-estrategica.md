@@ -32,5 +32,5 @@ actualizado: 2026-11-17
 - FPS: 30 (default del motor) · Formato: 1080x1920 vertical
 
 ## Aislamiento
-- Rutas propias: `vault/01-GUIONES/mente-estrategica/`, `vault/03-METRICAS/mente-estrategica/`, `engine/src/brands/mente-estrategica/`
+- Rutas propias: `vault/01-GUIONES/mente-estrategica/`, `vault/03-METRICAS/mente-estrategica/`, `engine/public/brands/mente-estrategica/`
 - Esta marca no comparte assets, guiones ni copys con ninguna otra.
