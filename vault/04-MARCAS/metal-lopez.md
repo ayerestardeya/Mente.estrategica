@@ -16,8 +16,9 @@ actualizado: 2026-11-17
 
 ## Visual
 - Fondo: Deep Slate `#0A1218`
-- Acento: Coral `#F0724F` **o** Teal `#2F9E9B`
-  - Regla de uso: NO DEFINIDO (preguntar cuál aplica por pieza; nunca mezclar sin indicación)
+- Acento principal: Teal `#2F9E9B` (también válido como fondo secundario)
+- Coral `#F0724F`: **exclusivo** para llamadas a la acción (CTAs) y advertencias.
+  Nunca como acento decorativo, fondo ni color de títulos.
 - Texto / Primario: NO DEFINIDO
 - Tipografía: NO DEFINIDO
 - Logo: NO DEFINIDO
