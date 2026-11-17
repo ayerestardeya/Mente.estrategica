@@ -1,0 +1,14 @@
+{
+  "name": "mi-mundo-engine",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.11" },
+    "ghcr.io/devcontainers-extra/features/ffmpeg-apt-get:1": {}
+  },
+  "postCreateCommand": "node --version && python3 --version && ffmpeg -version | head -n 1",
+  "customizations": {
+    "vscode": {
+      "extensions": ["anthropic.claude-code"]
+    }
+  }
+}

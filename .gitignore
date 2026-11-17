@@ -1,0 +1,24 @@
+# Secretos
+.env*
+!.env.example
+*.pem
+*.key
+**/secrets/
+
+# Media binaria (nunca versionar)
+*.mp3
+*.wav
+*.mp4
+
+# Motor
+engine/out/
+node_modules/
+
+# Obsidian
+.obsidian/workspace*.json
+
+# Claude local
+.claude/settings.local.json
+
+# SO
+.DS_Store
