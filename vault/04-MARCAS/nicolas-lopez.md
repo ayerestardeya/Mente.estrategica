@@ -1,37 +1,33 @@
 ---
 marca: nicolas-lopez
 nombre: Nicolás López
-estado: PENDIENTE
+estado: ACTIVA
 fps: 30
 formato_default: 1080x1920
+actualizado: 2026-11-17
 ---
 # Identidad de marca — Nicolás López
 
-> Fuente de verdad estética para `nicolas-lopez`. El agente NO inventa valores:
-> cualquier campo `PENDIENTE` bloquea el render hasta que el usuario lo complete.
-
-## Esencia
-- Propósito: PENDIENTE
-- Audiencia: PENDIENTE
-- Tono de voz: PENDIENTE
-- Palabras prohibidas / sí usar: PENDIENTE
+> Fuente de verdad estética para `nicolas-lopez`. El agente aplica SOLO lo escrito aquí.
+> Campos `NO DEFINIDO`: no inventar; preguntar al usuario si la pieza lo requiere.
 
 ## Visual
-- Paleta (hex): primario PENDIENTE · secundario PENDIENTE · acento PENDIENTE · fondo PENDIENTE
-- Tipografías: títulos PENDIENTE · cuerpo PENDIENTE
-- Logo / watermark (ruta): PENDIENTE
-- Estilo de subtítulos (tamaño, posición, animación): PENDIENTE
-- Transiciones y ritmo de corte: PENDIENTE
+- Fondo: Dark Obsidian `#010409`
+- Acentos: Glaciar Cyan `#00C4B4` y Ámbar `#FFB020`
+- Texto / Primario: NO DEFINIDO
+- Tipografía: NO DEFINIDO
+- Logo: NO DEFINIDO
 
 ## Audio
-- Voz TTS / locutor: PENDIENTE
-- Música / sonic branding: PENDIENTE
+- Voz: NO DEFINIDO
 
-## Plataformas
-- Canales y handles: PENDIENTE
-- Formatos prioritarios: PENDIENTE
-- Overrides técnicos (fps, resolución): ninguno (usa default 30 fps)
+## Motor Remotion preferido
+- **Hyperframes**
+- Estilo: cortes agresivos, 3D text barriers, revelaciones wireframe, retención rápida.
+
+## Técnico
+- FPS: 30 (default del motor) · Formato: 1080x1920 vertical
 
 ## Aislamiento
-- Rutas propias: `vault/01-GUIONES/nicolas-lopez/`, `vault/03-METRICAS/nicolas-lopez/`
+- Rutas propias: `vault/01-GUIONES/nicolas-lopez/`, `vault/03-METRICAS/nicolas-lopez/`, `engine/src/brands/nicolas-lopez/`
 - Esta marca no comparte assets, guiones ni copys con ninguna otra.

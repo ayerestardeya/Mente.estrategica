@@ -1,37 +1,37 @@
 ---
 marca: metal-lopez
 nombre: Metal López
-estado: PENDIENTE
+estado: ACTIVA
 fps: 30
 formato_default: 1080x1920
+actualizado: 2026-11-17
 ---
 # Identidad de marca — Metal López
 
-> Fuente de verdad estética para `metal-lopez`. El agente NO inventa valores:
-> cualquier campo `PENDIENTE` bloquea el render hasta que el usuario lo complete.
+> Fuente de verdad estética para `metal-lopez`. El agente aplica SOLO lo escrito aquí.
+> Campos `NO DEFINIDO`: no inventar; preguntar al usuario si la pieza lo requiere.
 
 ## Esencia
-- Propósito: PENDIENTE
-- Audiencia: PENDIENTE
-- Tono de voz: PENDIENTE
-- Palabras prohibidas / sí usar: PENDIENTE
+- Tono: solidez corporativa e industrial (desde 1982).
 
 ## Visual
-- Paleta (hex): primario PENDIENTE · secundario PENDIENTE · acento PENDIENTE · fondo PENDIENTE
-- Tipografías: títulos PENDIENTE · cuerpo PENDIENTE
-- Logo / watermark (ruta): PENDIENTE
-- Estilo de subtítulos (tamaño, posición, animación): PENDIENTE
-- Transiciones y ritmo de corte: PENDIENTE
+- Fondo: Deep Slate `#0A1218`
+- Acento: Coral `#F0724F` **o** Teal `#2F9E9B`
+  - Regla de uso: NO DEFINIDO (preguntar cuál aplica por pieza; nunca mezclar sin indicación)
+- Texto / Primario: NO DEFINIDO
+- Tipografía: NO DEFINIDO
+- Logo: NO DEFINIDO
 
 ## Audio
-- Voz TTS / locutor: PENDIENTE
-- Música / sonic branding: PENDIENTE
+- Voz: NO DEFINIDO
 
-## Plataformas
-- Canales y handles: PENDIENTE
-- Formatos prioritarios: PENDIENTE
-- Overrides técnicos (fps, resolución): ninguno (usa default 30 fps)
+## Motor Remotion preferido
+- **Paper Shades / Lemo**
+- Estilo: texturas densas, drop shadows duras, transiciones sobrias.
+
+## Técnico
+- FPS: 30 (default del motor) · Formato: 1080x1920 vertical
 
 ## Aislamiento
-- Rutas propias: `vault/01-GUIONES/metal-lopez/`, `vault/03-METRICAS/metal-lopez/`
+- Rutas propias: `vault/01-GUIONES/metal-lopez/`, `vault/03-METRICAS/metal-lopez/`, `engine/src/brands/metal-lopez/`
 - Esta marca no comparte assets, guiones ni copys con ninguna otra.

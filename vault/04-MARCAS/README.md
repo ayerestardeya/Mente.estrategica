@@ -1,6 +1,6 @@
 # 04-MARCAS — Identidad de marca (fuente de verdad)
 Un archivo por marca: `<slug>.md`. El agente **debe** leerlo antes de crear
-componentes Remotion o renderizar. Campos `PENDIENTE` = bloqueo: pedir datos.
+componentes Remotion o renderizar. Campos `PENDIENTE` o `NO DEFINIDO` = no inventar: pedir datos.
 
 | Slug                | Archivo                |
 |---------------------|------------------------|

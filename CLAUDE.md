@@ -1,4 +1,4 @@
-# CLAUDE.md — Mi Mundo Engine
+# CLAUDE.md — mi-mundo-engine (Mi Mundo Engine)
 
 Motor audiovisual centralizado (monorepo) para todo el ecosistema, con
 **segregación estricta de datos por marca (Multi-Tenant)**.
@@ -21,8 +21,8 @@ Cualquier slug fuera de esta tabla es inválido: detente y pregunta.
 2. **NUNCA asumas la estética.** Antes de renderizar o crear componentes en
    Remotion, debes leer estrictamente el archivo de identidad en
    `vault/04-MARCAS/[nombre-marca].md` para aplicar la identidad correcta.
-3. Si ese archivo tiene campos `PENDIENTE`, no inventes valores: detente y
-   pide los datos al usuario.
+3. Si ese archivo tiene campos `PENDIENTE` o `NO DEFINIDO` que la pieza necesita,
+   no inventes valores: detente y pide los datos al usuario.
 4. Solo lees y escribes rutas de la marca activa:
    - `vault/01-GUIONES/<slug>/`
    - `vault/03-METRICAS/<slug>/`
