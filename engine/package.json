@@ -13,7 +13,9 @@
     "render:test-kutt": "remotion render src/Root.tsx BrandRouter out/kutt-test.mp4 --props='{\"marca\": \"kutt\", \"skillTarget\": \"OpusCard\"}'",
     "render:kutt-viral": "remotion render src/Root.tsx MotorJSON out/kutt/kutt-viral.mp4 --props=public/test-kutt-viral.json",
     "still:kutt-viral": "remotion still src/Root.tsx MotorJSON out/kutt/kutt-viral.png --props=public/test-kutt-viral.json",
-    "render:test-3d": "remotion render src/Root.tsx BrandRouter out/nicolas-lopez/barrera-3d.mp4 --frames=0-59 --props='{\"marca\": \"nicolas-lopez\", \"skillTarget\": \"Hyperframes\", \"titulo\": \"Nicolás López\"}'"
+    "render:test-3d": "remotion render src/Root.tsx BrandRouter out/nicolas-lopez/barrera-3d.mp4 --frames=0-59 --props='{\"marca\": \"nicolas-lopez\", \"skillTarget\": \"Hyperframes\", \"titulo\": \"Nicolás López\"}'",
+    "render:nicolas-hyperframes": "remotion render src/Root.tsx MotorJSON out/nicolas-lopez/hyperframes.mp4 --props=public/test-nicolas-hyperframes.json",
+    "still:nicolas-hyperframes": "remotion still src/Root.tsx MotorJSON out/nicolas-lopez/hyperframes.png --props=public/test-nicolas-hyperframes.json"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.9",

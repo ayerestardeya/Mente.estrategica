@@ -1,0 +1,36 @@
+{
+  "marca": "nicolas-lopez",
+  "skillTarget": "Hyperframes",
+  "duracion_frames": 210,
+  "visual": {
+    "shot_type": "close_up",
+    "camera_zoom_speed": 0.2,
+    "motion_intensity": "aggressive",
+    "pattern_interrupt_events": [40, 96, 132],
+    "visual_change_interval": 30,
+    "cta_trigger_time": 150
+  },
+  "audio": {
+    "sfx_events": [
+      { "frame": 6, "type": "whoosh" },
+      { "frame": 40, "type": "impact" },
+      { "frame": 96, "type": "impact" },
+      { "frame": 132, "type": "impact" },
+      { "frame": 150, "type": "whoosh" }
+    ],
+    "music_mood": "dark"
+  },
+  "contenido": {
+    "hook": "NO CONFÍES EN LO QUE VES"
+  },
+  "cta": {
+    "_TODO": "TODO: Reemplazar con datos de producción (handle, textos y progreso son datos dummy de prueba)",
+    "handle": "@nicolaslopez",
+    "direccion": "Sígueme en",
+    "titulo": "Aprende a ver lo que otros no ven.",
+    "beneficio": "Análisis semanal sin filtros, directo a tu feed.",
+    "boton": "Quiero entrar",
+    "urgencia": "Cupos del próximo directo",
+    "progreso": 71
+  }
+}

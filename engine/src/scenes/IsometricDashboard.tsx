@@ -45,9 +45,12 @@ export const IsometricDashboard: React.FC<Props> = ({ theme, visual, contenido, 
   const glow = pulse(frame, fps, interrupts, 8);
   const borde = pulse(frame, fps, [...interrupts, ...clicks], 4);
 
+  const kpis = contenido.kpis ?? [];
+  const serie = contenido.serie ?? [];
+
   // Cambio de foco cada visual_change_interval frames.
   const tramo = Math.floor(frame / visual.visual_change_interval);
-  const foco = tramo % contenido.kpis.length;
+  const foco = kpis.length ? tramo % kpis.length : -1;
   const focoP = spring({ frame: frame - tramo * visual.visual_change_interval, fps, config: SPRINGS.standard });
 
   const texto = textColor(theme);
@@ -96,7 +99,7 @@ export const IsometricDashboard: React.FC<Props> = ({ theme, visual, contenido, 
         >
           {/* KPIs */}
           <div style={{ display: "flex", gap: 22, transformStyle: "preserve-3d" }}>
-            {contenido.kpis.map((kpi, i) => {
+            {kpis.map((kpi, i) => {
               const inicio = 14 + i * 5;
               const conteo = spring({ frame: frame - inicio, fps, config: SPRINGS.standard, durationInFrames: 18 });
               const valor = interpolate(conteo, [0, 1], [0, kpi.valor], { extrapolateRight: "clamp" });
@@ -151,7 +154,7 @@ export const IsometricDashboard: React.FC<Props> = ({ theme, visual, contenido, 
               gap: 16,
             }}
           >
-            {contenido.serie.map((v, i) => {
+            {serie.map((v, i) => {
               const p = spring({ frame: frame - 24 - i * 3, fps, config: SPRINGS.standard, durationInFrames: 20 });
               return (
                 <div

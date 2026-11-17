@@ -37,6 +37,8 @@ export interface BrandTheme {
   fontWeight: number;
   /** Archivo de fuente local en engine/public/ (staticFile). null = fuente del sistema. */
   fontFile: string | null;
+  /** Fuente en formato typeface.json para texto 3D (<Text3D>). null = sin texto 3D. */
+  typeface3d: string | null;
   /** Ruta del logo relativa a la raíz del repo. null = NO DEFINIDO. */
   logo: string | null;
   skillsPreferidas: readonly SkillId[];
@@ -62,6 +64,7 @@ export const THEMES = {
     logo: null,
     skillsPreferidas: ["CloudAnimationBase", "PaperShades"],
     fontFile: null,
+    typeface3d: null,
     cinematic: null,
   },
   kutt: {
@@ -78,6 +81,7 @@ export const THEMES = {
     logo: "vault/04-MARCAS/assets/kutt-logo.svg",
     skillsPreferidas: ["OpusCard", "Lemo"],
     fontFile: "brands/kutt/fonts/archivo-800-latin.woff2",
+    typeface3d: null,
     cinematic: {
       grano: 0.055,
       luzAmbiente: [0.12, 0.055],
@@ -102,6 +106,7 @@ export const THEMES = {
     logo: "vault/04-MARCAS/assets/metal-lopez-logo.svg",
     skillsPreferidas: ["PaperShades", "Lemo"],
     fontFile: null,
+    typeface3d: null,
     cinematic: null,
   },
   vitaly: {
@@ -118,6 +123,7 @@ export const THEMES = {
     logo: "vault/04-MARCAS/assets/vitaly-logo.svg",
     skillsPreferidas: ["Hyperframes", "OpusCard"],
     fontFile: null,
+    typeface3d: null,
     cinematic: null,
   },
   "nicolas-lopez": {
@@ -133,7 +139,8 @@ export const THEMES = {
     fontWeight: 700,
     logo: "vault/04-MARCAS/assets/nicolas-lopez-logo.png",
     skillsPreferidas: ["Hyperframes"],
-    fontFile: null,
+    fontFile: "brands/nicolas-lopez/fonts/poppins-700-latin.woff2",
+    typeface3d: "brands/nicolas-lopez/fonts/poppins-700.typeface.json",
     cinematic: null,
   },
 } as const satisfies Record<BrandSlug, BrandTheme>;

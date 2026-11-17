@@ -29,6 +29,7 @@ export const audioSchema = z.object({
 
 export const contenidoSchema = z.object({
   hook: z.string().min(1),
+  /** Requeridos por OpusCard (dashboard); opcionales en otros skills. */
   kpis: z
     .array(
       z.object({
@@ -39,9 +40,10 @@ export const contenidoSchema = z.object({
       }),
     )
     .min(1)
-    .max(4),
+    .max(4)
+    .optional(),
   /** Serie del gráfico, valores normalizados 0..1. */
-  serie: z.array(z.number().min(0).max(1)).min(3).max(12),
+  serie: z.array(z.number().min(0).max(1)).min(3).max(12).optional(),
   badge: z.string().optional(),
 });
 
@@ -75,6 +77,10 @@ export const engineSchema = z
     d.audio.sfx_events.forEach((e, i) => {
       if (fuera(e.frame)) ctx.addIssue({ code: "custom", path: ["audio", "sfx_events", i, "frame"], message: `frame ${e.frame} >= duracion_frames` });
     });
+    if (d.skillTarget === "OpusCard") {
+      if (!d.contenido.kpis) ctx.addIssue({ code: "custom", path: ["contenido", "kpis"], message: "OpusCard requiere kpis" });
+      if (!d.contenido.serie) ctx.addIssue({ code: "custom", path: ["contenido", "serie"], message: "OpusCard requiere serie" });
+    }
     if (fuera(d.visual.cta_trigger_time)) {
       ctx.addIssue({ code: "custom", path: ["visual", "cta_trigger_time"], message: "cta_trigger_time >= duracion_frames" });
     }

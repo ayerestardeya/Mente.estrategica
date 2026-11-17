@@ -17,14 +17,15 @@ actualizado: 2026-11-17 (v3)
 - Glitch cinemático (solo en pattern interrupts, nunca permanente):
   Rojo `#FF003C` · Cyan `#00DCFF`
 - Texto / Primario: NO DEFINIDO
-- Tipografía: **Poppins**
+- Tipografía: **Poppins Bold (700)** → `engine/public/brands/nicolas-lopez/fonts/`
+  (`poppins-700-latin.woff2` para HTML · `poppins-700.typeface.json` para texto 3D) (OFL)
 - Logo: `vault/04-MARCAS/assets/nicolas-lopez-logo.png` (placeholder vacío)
 
 ## Audio
 - Voz: ElevenLabs — voz clonada
 
 ## Motor Remotion preferido
-- **Hyperframes**
+- **Hyperframes** (barrera de texto 3D + máscara wireframe + glitch por eventos)
 - Estilo: cortes agresivos, 3D text barriers, revelaciones wireframe, retención rápida.
 
 ## Técnico
