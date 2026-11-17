@@ -1,28 +1,23 @@
-// Composición raíz: 30 fps, 1080x1920 (vertical Shorts/Reels).
+// Composición raíz y punto de entrada del CLI: 30 fps, 1080x1920.
+// Uso: remotion render src/Root.tsx out/x.mp4 --props='{"marca":"kutt","skillTarget":"OpusCard"}'
 import "./style.css";
-import { Composition } from "remotion";
-import { BaseVertical, baseVerticalSchema } from "./compositions/BaseVertical";
-import { FPS, HEIGHT, WIDTH } from "./constants";
+import { Composition, registerRoot } from "remotion";
+import { BrandRouter, brandRouterSchema } from "./BrandRouter";
+import { DURATION_IN_FRAMES, FPS, HEIGHT, WIDTH } from "./constants";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <Composition
-      id="BaseVertical"
-      component={BaseVertical}
-      schema={baseVerticalSchema}
+      id="BrandRouter"
+      component={BrandRouter}
+      schema={brandRouterSchema}
       fps={FPS}
       width={WIDTH}
       height={HEIGHT}
-      durationInFrames={FPS * 5}
-      // Valores neutros de prueba (no son de ninguna marca). Para producir,
-      // cargar los colores desde vault/04-MARCAS/<slug>.md.
-      defaultProps={{
-        marca: "mente-estrategica",
-        titulo: "mi-mundo-engine",
-        fondo: "#111111",
-        texto: "#EEEEEE",
-        acento: "#888888",
-      }}
+      durationInFrames={DURATION_IN_FRAMES}
+      defaultProps={{ marca: "kutt", skillTarget: "OpusCard" }}
     />
   );
 };
+
+registerRoot(RemotionRoot);

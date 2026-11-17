@@ -4,7 +4,7 @@ nombre: KUTT
 estado: ACTIVA
 fps: 30
 formato_default: 1080x1920
-actualizado: 2026-11-17
+actualizado: 2026-11-17 (v2)
 ---
 # Identidad de marca — KUTT
 
@@ -16,10 +16,10 @@ actualizado: 2026-11-17
 - Acento principal: Glaciar Cyan `#00C4B4`
 - Texto / Primario: NO DEFINIDO
 - Tipografía: **Archivo**
-- Logo: SVG vectorial oficial (ruta del archivo: NO DEFINIDO)
+- Logo: SVG vectorial oficial → `vault/04-MARCAS/assets/kutt-logo.svg` (placeholder vacío)
 
 ## Audio
-- Voz: ElevenLabs (voz, modelo y parámetros: NO DEFINIDO)
+- Voz: ElevenLabs — "Antoni" (registro profesional)
 
 ## Motor Remotion preferido
 - **OpusCard / Lemo**

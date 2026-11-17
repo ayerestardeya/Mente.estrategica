@@ -4,7 +4,7 @@ nombre: Metal López
 estado: ACTIVA
 fps: 30
 formato_default: 1080x1920
-actualizado: 2026-11-17
+actualizado: 2026-11-17 (v2)
 ---
 # Identidad de marca — Metal López
 
@@ -20,11 +20,11 @@ actualizado: 2026-11-17
 - Coral `#F0724F`: **exclusivo** para llamadas a la acción (CTAs) y advertencias.
   Nunca como acento decorativo, fondo ni color de títulos.
 - Texto / Primario: NO DEFINIDO
-- Tipografía: NO DEFINIDO
-- Logo: NO DEFINIDO
+- Tipografía: **Inter Bold**
+- Logo: `vault/04-MARCAS/assets/metal-lopez-logo.svg` (placeholder vacío)
 
 ## Audio
-- Voz: NO DEFINIDO
+- Voz: ElevenLabs — "Marcus"
 
 ## Motor Remotion preferido
 - **Paper Shades / Lemo**

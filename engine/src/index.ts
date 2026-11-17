@@ -1,4 +1,2 @@
-import { registerRoot } from "remotion";
-import { RemotionRoot } from "./Root";
-
-registerRoot(RemotionRoot);
+// Entrada alternativa (studio): Root.tsx ya llama a registerRoot.
+import "./Root";

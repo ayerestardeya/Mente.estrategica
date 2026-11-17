@@ -1,16 +1,23 @@
-// Previsualizador Vite con @remotion/player (mismos parámetros que Root.tsx).
+// Previsualizador Vite con @remotion/player. Marca y skill por query string:
+// /?marca=kutt&skill=OpusCard
 import "../style.css";
 import { createRoot } from "react-dom/client";
 import { Player } from "@remotion/player";
-import { BaseVertical } from "../compositions/BaseVertical";
-import { FPS, HEIGHT, WIDTH } from "../constants";
+import { BrandRouter, brandRouterSchema } from "../BrandRouter";
+import { DURATION_IN_FRAMES, FPS, HEIGHT, WIDTH } from "../constants";
+
+const q = new URLSearchParams(window.location.search);
+const props = brandRouterSchema.parse({
+  marca: q.get("marca") ?? "kutt",
+  skillTarget: q.get("skill") ?? "OpusCard",
+});
 
 createRoot(document.getElementById("root")!).render(
   <div className="flex min-h-screen items-center justify-center">
     <Player
-      component={BaseVertical}
-      inputProps={{ marca: "mente-estrategica", titulo: "mi-mundo-engine", fondo: "#111111", texto: "#EEEEEE", acento: "#888888" }}
-      durationInFrames={FPS * 5}
+      component={BrandRouter}
+      inputProps={props}
+      durationInFrames={DURATION_IN_FRAMES}
       fps={FPS}
       compositionWidth={WIDTH}
       compositionHeight={HEIGHT}

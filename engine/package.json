@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Motor audiovisual Remotion de mi-mundo-engine (multi-marca).",
+  "description": "Motor audiovisual Remotion de Mi Mundo Engine (multi-marca).",
   "scripts": {
-    "studio": "remotion studio src/index.ts",
-    "render": "remotion render src/index.ts",
+    "studio": "remotion studio src/Root.tsx",
+    "render": "remotion render src/Root.tsx",
     "dev": "vite",
     "build": "vite build",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "render:test-kutt": "remotion render src/Root.tsx BrandRouter out/kutt-test.mp4 --props='{\"marca\": \"kutt\", \"skillTarget\": \"OpusCard\"}'"
   },
   "dependencies": {
     "@remotion/cli": "4.0.544",

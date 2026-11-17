@@ -1,4 +1,4 @@
-# CLAUDE.md — mi-mundo-engine (Mi Mundo Engine)
+# CLAUDE.md — Mi Mundo Engine (repo `Mente.estrategica`)
 
 Motor audiovisual centralizado (monorepo) para todo el ecosistema, con
 **segregación estricta de datos por marca (Multi-Tenant)**.
@@ -23,6 +23,8 @@ Cualquier slug fuera de esta tabla es inválido: detente y pregunta.
    `vault/04-MARCAS/[nombre-marca].md` para aplicar la identidad correcta.
 3. Si ese archivo tiene campos `PENDIENTE` o `NO DEFINIDO` que la pieza necesita,
    no inventes valores: detente y pide los datos al usuario.
+   En código, la identidad vive solo en `engine/src/utils/themeProvider.ts`,
+   espejo del vault: si difieren, manda el vault y se corrige el diccionario.
 4. Solo lees y escribes rutas de la marca activa:
    - `vault/01-GUIONES/<slug>/`
    - `vault/03-METRICAS/<slug>/`

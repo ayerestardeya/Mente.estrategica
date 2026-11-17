@@ -5,8 +5,9 @@
 ## Estado actual
 - FASE 1 — Arnés Cognitivo Multi-Marca → SUPERADA (2026-11-17)
 - FASE 2 — Motor Remotion en `engine/` → SUPERADA (render verificado)
-- Siguiente fase: FASE 3 (pendiente de definir por el usuario)
-- Nombre canónico del repo: `mi-mundo-engine`. Push a `claude/quirky-carson-xe955h` aprobado.
+- FASE 3 — Enrutador dinámico + primer render KUTT/OpusCard → SUPERADA
+- Siguiente fase: FASE 4 (pendiente de definir por el usuario)
+- Repo: `Mente.estrategica` (nombre definitivo, no se renombra). Rama: `claude/quirky-carson-xe955h`.
 
 ## Decisiones vigentes confirmadas
 - Motor Universal: un solo repo para producir, con enrutamiento estricto por
@@ -22,10 +23,12 @@
 - Identidades de marca: `vault/04-MARCAS/<slug>.md`
 - Decisiones fechadas: `vault/02-DECISIONES/`
   - `2026-11-17-fase1-init.md` — inicialización Fase 1
-  - `2026-11-17-renombrado-repo.md` — nombre canónico `mi-mundo-engine`
+  - `2026-11-17-nombre-repo.md` — se conserva `Mente.estrategica`
   - `2026-11-17-fase2-remotion.md` — instalación del motor Remotion
+  - `2026-11-17-fase3-kutt.md` — enrutador, temas, skills, render KUTT
 - Verificador de fase: `scripts/verify-phase1.sh`
-- Motor: `engine/` (Root: `engine/src/Root.tsx`, 30 fps, 1080x1920)
+- Motor: `engine/src/Root.tsx` (entrada CLI, comp. `BrandRouter`, 30 fps, 1080x1920)
+- Temas: `engine/src/utils/themeProvider.ts` · Skills: `engine/src/components/skills/`
 - Permisos/denegaciones: `.claude/settings.json`
 - Entorno dev: `.devcontainer/devcontainer.json` (Node 20, Python 3.11, ffmpeg)
 
@@ -33,13 +36,13 @@
 | Slug                | Estado                                      |
 |---------------------|---------------------------------------------|
 | mente-estrategica   | ACTIVA (falta tipografía, ruta logo)        |
-| metal-lopez         | ACTIVA (falta voz, tipografía, logo)        |
-| kutt                | ACTIVA (falta voz ElevenLabs, ruta SVG)     |
-| vitaly              | ACTIVA (falta tipografía, logo, voz)        |
-| nicolas-lopez       | ACTIVA (falta tipografía, logo, voz)        |
+| metal-lopez         | ACTIVA (falta color de texto)               |
+| kutt                | ACTIVA (falta color de texto)               |
+| vitaly              | ACTIVA (falta color de texto)               |
+| nicolas-lopez       | ACTIVA (falta color de texto)               |
+- Logos en `vault/04-MARCAS/assets/` = placeholders vacíos (reemplazar).
 
 ## Preguntas abiertas
-- Renombrado remoto `Mente.estrategica` → `mi-mundo-engine`: aprobado, pendiente de
-  ejecutar en GitHub Settings (ver `2026-11-17-renombrado-repo.md`).
 - Completar campos `NO DEFINIDO` en `vault/04-MARCAS/`.
+- Fuentes de marca no se cargan aún en el render (solo Inter está en el sistema).
 - ¿Overrides de FPS/formato por marca (p. ej. 60 fps para algún canal)?

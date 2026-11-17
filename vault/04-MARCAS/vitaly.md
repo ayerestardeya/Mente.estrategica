@@ -4,7 +4,7 @@ nombre: Vitaly
 estado: ACTIVA
 fps: 30
 formato_default: 1080x1920
-actualizado: 2026-11-17
+actualizado: 2026-11-17 (v2)
 ---
 # Identidad de marca — Vitaly
 
@@ -15,11 +15,11 @@ actualizado: 2026-11-17
 - Fondo: Dark Obsidian `#010409`
 - Acento: Púrpura `#7C6BF2`
 - Texto / Primario: NO DEFINIDO
-- Tipografía: NO DEFINIDO
-- Logo: NO DEFINIDO
+- Tipografía: **Montserrat**
+- Logo: `vault/04-MARCAS/assets/vitaly-logo.svg` (placeholder vacío)
 
 ## Audio
-- Voz: NO DEFINIDO
+- Voz: ElevenLabs — "Martin Alvarez"
 
 ## Motor Remotion preferido
 - **Hyperframes / OpusCard**
