@@ -1,7 +1,23 @@
 // Diccionario de temas por marca. ESPEJO de vault/04-MARCAS/<slug>.md:
 // si cambia una ficha del vault, se actualiza aquí (el vault manda).
 // Regla: nada de colores de marca fuera de este archivo.
+import type { SpringConfig } from "remotion";
 import type { BrandSlug, SkillId } from "../constants";
+
+/** Perfil cinematográfico (Dirección de Arte). null = la marca no lo tiene definido. */
+export interface CinematicProfile {
+  /** Opacidad del film grain (soft-light). */
+  grano: number;
+  /** Alfa de la luz ambiente del acento: [centro 0%, medio 35%]. */
+  luzAmbiente: readonly [number, number];
+  /** Alfa de la viñeta negra: [interior 20%, exterior 100%]. */
+  vineta: readonly [number, number];
+  dashboard: { rotacion: readonly [number, number, number]; perspectiva: number };
+  dashboardCinematico: { rotacion: readonly [number, number, number]; perspectiva: number; translateZ: number };
+  tarjeta: { gradiente: readonly [string, string]; bordeAlfa: number };
+  /** Resorte de la tipografía cinética de la marca. */
+  springTexto: Partial<SpringConfig>;
+}
 
 export interface BrandTheme {
   slug: BrandSlug;
@@ -17,9 +33,12 @@ export interface BrandTheme {
   /** Tipografía declarada en el vault. null = NO DEFINIDO. */
   fuente: string | null;
   fontWeight: number;
+  /** Archivo de fuente local en engine/public/ (staticFile). null = fuente del sistema. */
+  fontFile: string | null;
   /** Ruta del logo relativa a la raíz del repo. null = NO DEFINIDO. */
   logo: string | null;
   skillsPreferidas: readonly SkillId[];
+  cinematic: CinematicProfile | null;
 }
 
 /** Valores técnicos neutros del motor (no son identidad de ninguna marca). */
@@ -39,6 +58,8 @@ export const THEMES = {
     fontWeight: 700,
     logo: null,
     skillsPreferidas: ["CloudAnimationBase", "PaperShades"],
+    fontFile: null,
+    cinematic: null,
   },
   kutt: {
     slug: "kutt",
@@ -49,9 +70,19 @@ export const THEMES = {
     acentoSecundario: null,
     cta: null,
     fuente: "Archivo",
-    fontWeight: 700,
+    fontWeight: 800,
     logo: "vault/04-MARCAS/assets/kutt-logo.svg",
     skillsPreferidas: ["OpusCard", "Lemo"],
+    fontFile: "brands/kutt/fonts/archivo-800-latin.woff2",
+    cinematic: {
+      grano: 0.055,
+      luzAmbiente: [0.12, 0.055],
+      vineta: [0.15, 0.75],
+      dashboard: { rotacion: [55, 0, -35], perspectiva: 1400 },
+      dashboardCinematico: { rotacion: [48, -8, -25], perspectiva: 1100, translateZ: 100 },
+      tarjeta: { gradiente: ["#142832", "#0C171E"], bordeAlfa: 0.16 },
+      springTexto: { damping: 20, stiffness: 170, mass: 0.8 },
+    },
   },
   "metal-lopez": {
     slug: "metal-lopez",
@@ -65,6 +96,8 @@ export const THEMES = {
     fontWeight: 700,
     logo: "vault/04-MARCAS/assets/metal-lopez-logo.svg",
     skillsPreferidas: ["PaperShades", "Lemo"],
+    fontFile: null,
+    cinematic: null,
   },
   vitaly: {
     slug: "vitaly",
@@ -78,6 +111,8 @@ export const THEMES = {
     fontWeight: 700,
     logo: "vault/04-MARCAS/assets/vitaly-logo.svg",
     skillsPreferidas: ["Hyperframes", "OpusCard"],
+    fontFile: null,
+    cinematic: null,
   },
   "nicolas-lopez": {
     slug: "nicolas-lopez",
@@ -91,6 +126,8 @@ export const THEMES = {
     fontWeight: 700,
     logo: "vault/04-MARCAS/assets/nicolas-lopez-logo.png",
     skillsPreferidas: ["Hyperframes"],
+    fontFile: null,
+    cinematic: null,
   },
 } as const satisfies Record<BrandSlug, BrandTheme>;
 

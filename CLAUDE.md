@@ -29,7 +29,7 @@ Cualquier slug fuera de esta tabla es inválido: detente y pregunta.
    - `vault/01-GUIONES/<slug>/`
    - `vault/03-METRICAS/<slug>/`
    - `vault/04-MARCAS/<slug>.md`
-   - (futuro) `engine/brands/<slug>/` y `engine/out/<slug>/`
+   - `engine/public/brands/<slug>/` (fuentes, assets) y `engine/out/<slug>/`
 5. Todo archivo de contenido lleva frontmatter `marca: <slug>`. Si el valor no
    coincide con la carpeta, el archivo va a `vault/99-CUARENTENA/`.
 6. Cambio de marca = cambio de contexto: cierra la tarea actual, anuncia

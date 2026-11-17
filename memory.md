@@ -6,7 +6,8 @@
 - FASE 1 — Arnés Cognitivo Multi-Marca → SUPERADA (2026-11-17)
 - FASE 2 — Motor Remotion en `engine/` → SUPERADA (render verificado)
 - FASE 3 — Enrutador dinámico + primer render KUTT/OpusCard → SUPERADA
-- Siguiente fase: FASE 4 (pendiente de definir por el usuario)
+- FASE 4 — Motor JSON-driven + acabado cinematográfico (KUTT) → SUPERADA
+- Siguiente: FASE 5 (pendiente; ver preguntas abiertas: 3D y perfil Nicolás)
 - Repo: `Mente.estrategica` (nombre definitivo, no se renombra). Rama: `claude/quirky-carson-xe955h`.
 
 ## Decisiones vigentes confirmadas
@@ -26,9 +27,11 @@
   - `2026-11-17-nombre-repo.md` — se conserva `Mente.estrategica`
   - `2026-11-17-fase2-remotion.md` — instalación del motor Remotion
   - `2026-11-17-fase3-kutt.md` — enrutador, temas, skills, render KUTT
+  - `2026-11-17-fase4-json-cinematico.md` — esquema JSON, cinemática, CTA
 - Verificador de fase: `scripts/verify-phase1.sh`
 - Motor: `engine/src/Root.tsx` (entrada CLI, comp. `BrandRouter`, 30 fps, 1080x1920)
 - Temas: `engine/src/utils/themeProvider.ts` · Skills: `engine/src/components/skills/`
+- JSON: esquema `engine/src/schema.ts` · comp. `MotorJSON` · ejemplo `engine/public/test-kutt-viral.json`
 - Permisos/denegaciones: `.claude/settings.json`
 - Entorno dev: `.devcontainer/devcontainer.json` (Node 20, Python 3.11, ffmpeg)
 
@@ -44,5 +47,8 @@
 
 ## Preguntas abiertas
 - Completar campos `NO DEFINIDO` en `vault/04-MARCAS/`.
-- Fuentes de marca no se cargan aún en el render (solo Inter está en el sistema).
+- Fuentes: solo KUTT (Archivo 800) se carga local; Inter/Montserrat/Poppins pendientes.
+- ¿Autorizar stack 3D (three, R3F, @remotion/three)? Requiere npm install.
+- Perfil Nicolás del blueprint choca con su ficha (#050505 vs #010409, glitch RGB).
+- Viñeta KUTT: CSS literal 0.75 vs tabla 0.45 (KPIs quedan oscuros).
 - ¿Overrides de FPS/formato por marca (p. ej. 60 fps para algún canal)?

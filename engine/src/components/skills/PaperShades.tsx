@@ -1,13 +1,14 @@
 // PaperShades (esqueleto): texturas de papel, recortes, drop shadows duras.
 // TODO Fase siguiente: implementar la animación propia del skill.
-import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { SPRINGS } from "../../motion/springs";
 import { fontFamily, textColor } from "../../utils/themeProvider";
 import type { SkillProps } from "./types";
 
 export const PaperShades: React.FC<SkillProps> = ({ theme, titulo }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const opacity = interpolate(frame, [0, fps], [0, 1], { extrapolateRight: "clamp" });
+  const opacity = Math.min(1, spring({ frame, fps, config: SPRINGS.soft }));
 
   return (
     <AbsoluteFill

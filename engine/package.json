@@ -10,7 +10,9 @@
     "dev": "vite",
     "build": "vite build",
     "typecheck": "tsc --noEmit",
-    "render:test-kutt": "remotion render src/Root.tsx BrandRouter out/kutt-test.mp4 --props='{\"marca\": \"kutt\", \"skillTarget\": \"OpusCard\"}'"
+    "render:test-kutt": "remotion render src/Root.tsx BrandRouter out/kutt-test.mp4 --props='{\"marca\": \"kutt\", \"skillTarget\": \"OpusCard\"}'",
+    "render:kutt-viral": "remotion render src/Root.tsx MotorJSON out/kutt/kutt-viral.mp4 --props=public/test-kutt-viral.json",
+    "still:kutt-viral": "remotion still src/Root.tsx MotorJSON out/kutt/kutt-viral.png --props=public/test-kutt-viral.json"
   },
   "dependencies": {
     "@remotion/cli": "4.0.544",

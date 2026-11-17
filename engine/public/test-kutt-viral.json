@@ -1,0 +1,47 @@
+{
+  "marca": "kutt",
+  "skillTarget": "OpusCard",
+  "titulo": "KUTT",
+  "duracion_frames": 240,
+  "visual": {
+    "shot_type": "medium",
+    "camera_zoom_speed": 0.16,
+    "motion_intensity": "aggressive",
+    "pattern_interrupt_events": [42, 78, 114, 150],
+    "visual_change_interval": 36,
+    "cta_trigger_time": 168
+  },
+  "audio": {
+    "sfx_events": [
+      { "frame": 4, "type": "whoosh" },
+      { "frame": 42, "type": "impact" },
+      { "frame": 60, "type": "ui_click" },
+      { "frame": 78, "type": "impact" },
+      { "frame": 96, "type": "ui_click" },
+      { "frame": 114, "type": "impact" },
+      { "frame": 150, "type": "impact" },
+      { "frame": 162, "type": "whoosh" },
+      { "frame": 180, "type": "ui_click" }
+    ],
+    "music_mood": "tension"
+  },
+  "contenido": {
+    "hook": "Tu dashboard te está mintiendo",
+    "kpis": [
+      { "label": "Retención", "valor": 87.4, "sufijo": "%", "decimales": 1 },
+      { "label": "CTR", "valor": 12.8, "sufijo": "%", "decimales": 1 },
+      { "label": "Leads", "valor": 2400, "sufijo": "+" }
+    ],
+    "serie": [0.32, 0.48, 0.41, 0.66, 0.58, 0.82, 0.74, 0.97],
+    "badge": "+212% en 30 días"
+  },
+  "cta": {
+    "handle": "@kutt",
+    "direccion": "Síguenos en",
+    "titulo": "Deja de adivinar. Mide lo que importa.",
+    "beneficio": "Plantilla gratis de dashboard de retención para tu equipo.",
+    "boton": "Quiero la plantilla",
+    "urgencia": "Plazas de la beta",
+    "progreso": 83
+  }
+}
