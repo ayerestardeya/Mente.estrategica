@@ -1,0 +1,33 @@
+{
+  "name": "@mi-mundo/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Motor audiovisual Remotion de mi-mundo-engine (multi-marca).",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts",
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.544",
+    "@remotion/player": "4.0.544",
+    "@remotion/tailwind-v4": "4.0.544",
+    "@remotion/zod-types": "4.0.544",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.544",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^8.0.0"
+  }
+}
