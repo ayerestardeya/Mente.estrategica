@@ -35,12 +35,12 @@
 |---------------------|---------------------------------------------|
 | mente-estrategica   | ACTIVA (falta tipografía, ruta logo)        |
 | metal-lopez         | ACTIVA (falta voz, tipografía, logo)        |
-| kutt                | ACTIVA (falta voz, SVG, color de texto)     |
+| kutt                | ACTIVA (falta voz ElevenLabs, ruta SVG)     |
 | vitaly              | ACTIVA (falta tipografía, logo, voz)        |
 | nicolas-lopez       | ACTIVA (falta tipografía, logo, voz)        |
 
 ## Preguntas abiertas
 - Renombrado remoto `Mente.estrategica` → `mi-mundo-engine`: aprobado, pendiente de
   ejecutar en GitHub Settings (ver `2026-11-17-renombrado-repo.md`).
-- Completar campos `NO DEFINIDO` en `vault/04-MARCAS/` (KUTT: texto `#FFFFFF` provisional).
+- Completar campos `NO DEFINIDO` en `vault/04-MARCAS/`.
 - ¿Overrides de FPS/formato por marca (p. ej. 60 fps para algún canal)?

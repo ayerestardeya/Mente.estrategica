@@ -17,7 +17,7 @@ estado: vigente
   ScreenDemo 420–720 (zoom in desde 450), EndCard 720–900 (3 s de animación + pausa final).
   Fundido cruzado de 12 frames entre escenas.
 - Zona segura: top 220, bottom 420, left 72, right 150 px.
-- Color de texto PROVISIONAL `#FFFFFF` (kutt.md: "Texto / Primario" NO DEFINIDO).
+- Color de texto oficial: Blanco `#FFFFFF` (confirmado por el usuario).
 
 ## Verificación
 - `npm run typecheck` OK · `npm run build` OK.

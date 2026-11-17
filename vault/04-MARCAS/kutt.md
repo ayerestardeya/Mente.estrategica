@@ -14,7 +14,7 @@ actualizado: 2026-11-17
 ## Visual
 - Fondo: Deep Slate `#0A1218`
 - Acento principal: Glaciar Cyan `#00C4B4`
-- Texto / Primario: NO DEFINIDO
+- Texto / Primario: Blanco `#FFFFFF` (confirmado por el usuario 2026-11-17)
 - Tipografía títulos: **Archivo ExtraBold (800)**
 - Tipografía cuerpo / subtítulos: **Inter** (confirmado por el usuario 2026-11-17)
 - Handle: `@kutt.cl` · Frase de cierre: "KUTT, todo en orden."

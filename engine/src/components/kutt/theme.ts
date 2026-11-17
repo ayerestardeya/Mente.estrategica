@@ -7,9 +7,7 @@ export const KUTT = {
   colores: {
     fondo: "#0A1218", // Deep Slate
     acento: "#00C4B4", // Glaciar Cyan
-    // PROVISIONAL: "Texto / Primario" figura como NO DEFINIDO en kutt.md.
-    // Blanco neutro hasta que el usuario lo confirme. Cambiar SOLO aquí.
-    texto: "#FFFFFF",
+    texto: "#FFFFFF", // Texto / Primario (oficial, confirmado 2026-11-17)
     // Placeholder de capturas de UI (gris temporal, no es color de marca).
     placeholder: "#3A3F44",
   },
